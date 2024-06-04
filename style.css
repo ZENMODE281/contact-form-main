@@ -25,7 +25,7 @@ body{
 
 .white-box{
     background-color: white;
-    height: 100vh;
+    height: 110vh;
     width: 100%;
     border-radius: 20px;
     padding: 20px 15px 20px 15px;
@@ -133,7 +133,32 @@ button{
   #box5.clicked {
     background-color: rgba(53, 236, 96, 0.796); /* background color on click */
   }
-
+  /*display message*/
+  #message {
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    background-color: #000;
+    padding: 10px;
+    border-radius: 10px;
+    display: none;
+    flex-direction: row; /* add this to display horizontally */
+    align-items: center; /* add this to center vertically */
+  }
+  
+  #message img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+  
+  #message-text {
+    color: inherit; /* remove text color */
+    margin-left: 10px; /* add some space between image and text */
+  }
 @media  (min-width: 600px) {
     .wrapper{
         margin-top: 40px;

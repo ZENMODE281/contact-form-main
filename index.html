@@ -77,7 +77,11 @@
             <p>I consent to being contacted by the team <span>*</span></p>
           </div>  
         </div>
-        <button>Submit</button>
+        <button id="submit">Submit</button>
+        <div id="message">
+          <img src="/assets/images/icon-success-check.svg" alt=""> <!-- space for a picture -->
+          <span id="message-text"></span>
+        </div>
         </fieldset>
       </form>
     </div>
@@ -88,6 +92,14 @@
 box5.addEventListener('click', () => {
   box5.classList.add('clicked');
 });
+const submitButton = document.getElementById('submit');
+  const messageElement = document.getElementById('message');
+  const messageTextElement = document.getElementById('message-text');
+
+  submitButton.addEventListener('click', () => {
+    messageTextElement.innerHTML = 'Thanks for submitting the form, we will be in touch soon!';
+    messageElement.style.display = 'block';
+  });
   </script>
 </body>
 </html>
