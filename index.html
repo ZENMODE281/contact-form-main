@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Contact form</title>
+
+</head>
+<body>
+  <div class="wrapper">
+    <div class="white-box">
+        <h1>Contact Us</h1>
+      <form>
+        <fieldset>
+            <div class="top-side">
+              <div class="First_name">
+                <label for="box1">
+                  <p>First Name <span>*</span></p>
+                  <input type="text" id="box1" required>
+                </label>
+              </div>
+
+              <div class="last_name">
+                <label for="box2">
+                  <p>Last Name <span>*</span></p>
+                  <input type="text" id="box2"required>
+                </label>
+              </div>
+          </div>
+          
+          <div class="email">
+            <label for="box3">
+              <p>Email Address <span>*</span></p>
+              <input type="text" id="box3" required>
+            </label>
+          </div>
+          <div class="full-query">
+            <p>Query type <span>*</span></p>
+            <div class="Query_type">
+              <div class="inner-query_type"> 
+                  <label for="box4">
+                    <div class="radio">
+                      <input type="radio" id="radio-btn" required><p>General Enquiry</p>
+                    </div>
+                  </label>
+              </div>
+              <div class="inner-query_type" > 
+                <label for="box4">
+                  <!-- <p>Query type <span>*</span></p> -->
+                  <div class="radio">
+                    <input type="radio" id="radio-btn2" required><p>Support request</p>
+                  </div>
+                </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="Message-box">
+          <label for="box5">
+            <p>Message-box</p>
+            <textarea name="Message-box" id="box5"></textarea>
+          </label>
+        </div>
+
+        <div class="check_text">
+          <div class="check">
+            <input type="checkbox" id="myCheckbox">
+            <label for="myCheckbox"></label>
+          </div>
+          <p>I consent to being contacted by<br> the team</p>
+        </div>
+        <button>Submit</button>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
